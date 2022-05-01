@@ -60,10 +60,10 @@ app.use((req, res, next) => {
 });
 
 // ROUTES BIND
-app.use(postRouter);
-app.use(mainRouter);
-app.use(contactRouter);
-app.use(restapiRouter);
+app.use('/blogjs', postRouter);
+app.use('/blogjs',mainRouter);
+app.use('/blogjs',contactRouter);
+app.use('/blogjs',restapiRouter);
 app.use((req, res)=>{
     const title = 'Error page*'
     res
