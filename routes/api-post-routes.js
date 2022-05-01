@@ -8,15 +8,15 @@ const { getPost,
 const router = express.Router();
 
 // Add New Post
-router.post('/api/post', addPost);
+router.post('/api-v1/post', addPost);
 // Update post by ID
-router.put('/api/post/:id', updatePost); //editPost
+router.put('/api-v1/post/:id', updatePost); //editPost
 // Delete post By ID
-router.delete('/api/post/:id', deletePost);
+router.delete('/api-v1/post/:id', deletePost);
 // Get All posts
-router.get('/api/posts', getPosts);
+router.get('/api-v1/posts', getPosts);
 // Get post by ID
-router.get('/api/post/:id', getPost);
+router.get('/api-v1/post/:id', getPost);
 
 
 module.exports = router;
