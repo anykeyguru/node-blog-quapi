@@ -33,7 +33,7 @@ mongoose
 
 
 // STATICs
-app.use(express.static('styles'));
+app.use(express.static('/styles'));
 // EXTENDS
 //SEND DATA BY - URLENCODED form
 app.use(express.urlencoded({ extended: false }));
