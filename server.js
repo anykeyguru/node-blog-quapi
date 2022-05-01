@@ -11,7 +11,7 @@ const contactRouter = require('./routes/contact-routes');
 const mainRouter = require('./routes/main-routes');
 const restapiRouter = require('./routes/api-post-routes');
 const noneRouter = require('./routes/none-routes');
-
+const path = require('path');
 // Server params
 // const PORT = 3000;
 
@@ -33,7 +33,9 @@ mongoose
 
 
 // STATICs
-app.use(express.static('styles'));
+// app.use(express.static('styles'));
+app.use(express.static(path.join(__dirname, '..', '/styles')));
+// app.use(express.static(path.join(__dirname, '..', '/public'))); 
 // EXTENDS
 //SEND DATA BY - URLENCODED form
 app.use(express.urlencoded({ extended: false }));
