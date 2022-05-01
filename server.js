@@ -33,8 +33,9 @@ mongoose
 
 
 // STATICs
-// app.use(express.static('styles'));
-app.use(express.static(path.join(__dirname, '..', 'styles')));
+app.use(express.static('styles'));
+// app.use(express.static(path.join(__dirname, 'webapp', 'styles')));
+// console.log(path.join(__dirname, '..', 'styles'));
 // app.use(express.static(path.join(__dirname, '..', '/public'))); 
 // EXTENDS
 //SEND DATA BY - URLENCODED form
