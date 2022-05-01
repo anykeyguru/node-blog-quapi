@@ -53,7 +53,6 @@ app.use((req, res, next) => {
         + req.method + ' "'
         + req.url + '" '
         + res.statusCode
-        + ' <' + req.headers['User-agent']
         + '>\n';
     fs.appendFileSync('./server.log', data, (error) => {
         error ? console.log(error) : null;
